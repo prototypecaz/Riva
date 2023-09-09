@@ -1,0 +1,465 @@
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black!important;
+}
+
+
+@font-face {
+    font-family: "Riva";
+    src: url("../fonts/Pencerio-Hairline.ttf");
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Messa";
+    src: url("../fonts/Sneaky-Times.woff");
+}
+
+@font-face {
+    font-family: "Libre";
+    src: url("../fonts/librecaslondisplay-regular.otf");
+}
+
+@font-face {
+    font-family: "Messapia";
+    src: url("../fonts/Sneaky-Times.woff");
+}
+
+
+
+
+   
+
+
+.blockProduit{
+    width: 40vmin;
+    height: 45vmin;
+    border: 2px solid black;
+    margin: 2vmin 1vmin 0 1vmin;
+}
+
+#blockH,#blockF{
+    background-color: red;
+    position: absolute;
+    border:2px solid black;
+    padding:1vmin 0 2vmin 2vmin;
+    width:25vmin;
+    top:100%;
+}
+
+#blockH{
+right:12%
+}
+
+#blockF{
+left:12%
+}
+
+.propriete{
+    font-weight: bold;
+
+}
+
+#blockCategorieH,#blockCategorieF,#blockMarqueH,#blockMarqueF{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vmin 0 0.8vmin 0;
+}
+
+#nombreProduits{
+    width: 2.6vmin;
+    height: 2.6vmin;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    bottom:0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+
+
+.barreDeRecherche{
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline-style: none;
+    width: 20vw;
+}
+
+.btnRecherche,.btnRechercheTel{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 1.5vmin;
+}
+
+.btnRecherche > i {
+    font-size: 2.4vmin;
+}
+
+.logo{
+    font-family: "Riva";
+   
+   
+}
+
+.titrePrincipale{
+    font-size: 8vmin;
+    text-align: center;
+    margin-bottom: 4vmin;
+    font-family: "Libre";
+    letter-spacing: 1px;
+    
+}
+
+.sousTitre{
+    font-size: 2.5vmin;
+    text-align: center;
+    margin-bottom: 7vmin;
+    letter-spacing: 2px;
+    font-family: "Messa";
+}
+
+.genre{
+    font-family: "Messapia";
+}
+
+#test{
+width: 100%;
+ position: fixed;
+
+}
+
+.titrePrestige{
+    font-family:"Libre";
+   
+}
+
+
+
+#nav{
+    position:relative;
+    display:flex;
+    align-items:center;
+    
+}
+
+#prestige{
+    display:grid;
+    grid-gap: 6vw 25vw ;
+    width:100%;
+    justify-items:center;
+    margin-bottom:14vmin
+}
+
+.paraPrestige{
+    margin:5.5vmin 0;
+    font-family:'Messa';
+}
+
+
+
+
+.lienPrestige{
+    
+    font-weight:bold;
+    font-family:'Messa';
+    border-bottom: 2px solid black;
+    padding-bottom:0.5vw
+}
+
+#sectionMouv{
+    height: 63vmin;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    padding-top: 15vmin; 
+  
+}
+
+
+
+
+
+
+
+#formulaireRecherche{
+    display: none;
+}
+
+.btnRechercheTel{
+    display: block;
+}
+
+.navBar{
+    display: none;
+}
+
+.tailleImg{
+    height: 80vmin;
+}
+
+#prestige{
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.titrePrestige{
+    font-size:6vmin;
+   
+}
+
+.paraPrestige, .lienPrestige{
+    font-size: 3vw;
+}
+
+#sectionFixe{
+    margin:10vmin 0;
+    z-index: 0;
+    text-align: center;
+}
+
+.panierTel,.btnRechercheTel,.burger{
+    font-size: 5.5vmin;
+}
+
+.logo{
+
+    font-size: 5.5vmin;
+    margin-left:3vmin
+   
+}
+
+
+@media (min-width: 640px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+
+
+
+@media (min-width: 1280px) {
+    
+    .burger{
+    display: none!important;
+} 
+
+.btnRecherche > i {
+    font-size: 1vw;
+}
+
+
+.logo{
+    font-size: 2vw
+}
+
+.lienHeader{
+    padding:0.7vw!important;
+    font-size: 0.8vw;
+    font-family: "Messa";
+    letter-spacing: 2px;
+}
+
+.panierTel{
+    font-size: 1vw;
+}
+
+#sectionFixe{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+   
+    
+}
+
+#formulaireRecherche{
+    display: flex;
+    align-items:center
+}
+
+.btnRechercheTel{
+    display: none;
+}
+
+.navBar{
+    display: block;
+}
+
+.tailleImg{
+    height: 92vmin;
+}
+
+#prestige{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.titrePrestige{
+    font-size:3.2vw;
+}
+
+.paraPrestige,.lienPrestige{
+    font-size:1vw
+}
+
+.titrePrincipale{
+    font-size: 10vmin;
+}
+
+#sectionPrestige{
+    position: relative;
+}
+
+}
+
+
+@media (min-width: 1536px) {}
+
+
+
+   /* @media only screen and (max-width : 926px) and (orientation: landscape) {
+        
+        #formulaireRecherche{
+            display: none;
+        }
+    
+        .btnRechercheTel{
+            display: block;
+        }
+    
+        .navBar{
+            display: none;
+        }
+    
+        .tailleImg{
+            height: 80vmin;
+        }
+    
+        #prestige{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    
+        .titrePrestige{
+            font-size:8vw;
+           
+        }
+    
+        .paraPrestige, .lienPrestige{
+            font-size: 4vw;
+        }
+        
+        #sectionFixe{
+         
+            position: initial;
+            transform: translate(0, 0);
+            margin:10vmin 0
+        }
+    
+        .panierTel,.btnRechercheTel,.burger{
+            font-size: 5.5vmin;
+        }
+    
+        .burger{
+            display:initial!important;
+    
+    
+        }
+    
+        .logo{
+    
+            font-size: 5.5vmin;
+            margin-left:3vmin
+           
+        }
+
+        .titrePrincipale{
+            color:red
+        }
+    
+        }
+
+        @media only screen and (min-width : 551px) and (orientation: portrait) {
+           
+            #formulaireRecherche{
+                display: none;
+            }
+        
+            .btnRechercheTel{
+                display: block;
+            }
+        
+            .navBar{
+                display: none;
+            }
+        
+            .tailleImg{
+                height: 80vmin;
+            }
+        
+            #prestige{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        
+            .titrePrestige{
+                font-size:8vw;
+               
+            }
+        
+            .paraPrestige, .lienPrestige{
+                font-size: 4vw;
+            }
+            
+            #sectionFixe{
+             
+                position: initial;
+                transform: translate(0, 0);
+                margin:10vmin 0
+            }
+        
+            .panierTel,.btnRechercheTel,.burger{
+                font-size: 5.5vmin;
+            }
+        
+            .burger{
+                display:initial!important;
+        
+        
+            }
+        
+            .logo{
+        
+                font-size: 5.5vmin;
+                margin-left:3vmin
+               
+            }
+        
+            }*/
+        
+
+  
+       
+    
+
+        
+   
